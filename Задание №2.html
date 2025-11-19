@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://raptor-mvk.github.io/qa-html-css-homework/task2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Задание №2</title>
+    <link rel="stylesheet" href="./Задание №2_files/styles2.css">
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+<a href="https://raptor-mvk.github.io/qa-html-css-homework/task_main.html">Вернуться к списку заданий</a>
+<!--class="green">Это красный текст</p>не соответствует смыслу текста, проблема в неверном селекторе class="green"
+Должно быть: <p class="red">Это красный текст</p>-->
+<p class="red">Это красный текст</p>
+<!--<p class="red" style="color:red">Это тоже красный текст</p>
+дополнительный стиль прямо внутри атрибута style, для решения данной звдачи достаточно class="red"
+Должно быть:<p class="red">Это тоже красный текст</p>-->
+<p class="red">Это тоже красный текст</p>
+<!--<p class="italic">Это полужирный текст</p>
+проблема в классе class="italic"
+Должно быть:<p class="bold">Это полужирный текст</p>-->
+<p class="bold">Это полужирный текст</p>
+<!--<p class="bold">Это <i>тоже полужирный</i> текст</p>
+проблема в нарушени  использования тегов <i></i> в этом тексте нет курсива
+Должно быть:<p class="bold">Это тоже полужирный текст</p>-->
+<p class="bold">Это тоже полужирный текст</p>
+<p>Все элементы следующего списка (включая подсписок) имеют разные цвета и ни один из них не чёрный:</p>
+<!--в строках 
+<li color="green"> Элемент списка</li>
+<li color="red">Первый элемент подсписка</li>
+отсутствует атрибут style элементы и значения написаны не верно.
+Должно быть: 
+<li style="color:green"> Элемент списка</li>
+<li style="color:red">Первый элемент подсписка</li>-->
+<ul>
+    <li style="color:green"> Элемент списка</li>
+        <ol>
+            <li style="color:red">Первый элемент подсписка</li>
+            <li style="color:red">Второй элемент подсписка</li>
+        </ol>
+    <li style="color:green">Ещё один элемент списка</li>
+</ul>
+<!--<p><span class="xxsmall">В</span> <span font-size="xsmall">этом</span>
+    <b class="medium">абзаце</b> <span class="xlarge">все</span> <span large="">слова</span>
+    <span font="size=small">разного</span> <span size="xxlarge">размера</span></p>
+Проблема неправильне комбинирование классов и встроенных стилей, а также тега <b>
+Решение: использование только классов, объявленных в CSS-файле, 
+что позволяет обеспечить правильное отображение размеров шрифтов.-->
+<p><span class="xxsmall">В</span> 
+   <span class="xsmall">этом</span>
+   <span class="medium">абзаце</span> 
+   <span class="xlarge">все</span> 
+   <span class="large">слова</span>
+   <span class="small">разного</span> 
+   <span class="xxlarge">размера</span></p>
+
+
+</body></html>

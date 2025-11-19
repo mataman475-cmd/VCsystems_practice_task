@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://raptor-mvk.github.io/qa-html-css-homework/task3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Задание №3*</title>
+    <link rel="stylesheet" href="./Задание №3__files/styles3.css">
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+<a href="https://raptor-mvk.github.io/qa-html-css-homework/task_main.html">Вернуться к списку заданий</a>
+<!--Элементы помечены классами («красный», «зеленый»), однако заданные встроенными стилями цвета перекрывают эти классы. 
+То есть реальные цвета отличаются от ожидаемых. Здесь достаточно классов без встроенных стилей т.к. есть таблица css.
+Должно быть:-->
+<p class="red">Это красный текст</p>
+<p class="green">Это зелёный текст</p>
+<!--Текст отбражается курсивом потому что в таблице CSS произведены правки см. css файл-->
+<p class="italic">Этот текст написан курсивом</p>
+<!--<p class="bold">Это <i>полужирный</i> текст</p> Проблема в неправельном использовании тега <i></i>
+Должно быть:-->
+<p class="bold">Это полужирный текст</p>
+<!--Списки и под списки помеченны не верными тегами <ul>,<ol> должно быть наоборот.
+    <li class="green" style="color:red">Этот элемент списка зелёный</li>
+    <li class="red" style="color:blue">Этот элемент подсписка красный</li>
+    Классы не соответствуют стилям. В строенные стили здесь не требыется т.к. у наc есть таблица css-->
+<ol>
+    <li class="green">Этот элемент списка зелёный</li>
+    <ul>
+        <li class="red">Этот элемент подсписка красный</li>
+        <li class="blue">Этот элемент подсписка синий</li>
+    </ul>
+</ol>
+
+
+</body></html>

@@ -1,0 +1,47 @@
+﻿body {
+    font-size: 24px;
+}
+/*названия классов и назначаемые цвета противоположны друг другу. 
+Это приводит к тому, что цвет элемента будет отличаться от ожидаемого.*/
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+/*Селекторы li.green,red,blue означает, что элементы <li> с классом green станут красными.
+red станут синими, blue станут зелёными, проблема в неверных классах*/
+li.green {
+    color: green;
+}
+li.red {
+    color: red;
+}
+li.blue {
+    color: blue;
+}
+/*Внутри вложенных списков (например, ul ol li.red) применяются уникальные цвета, в задании нет таких классов
+Должно быть:*/
+ul ol li.red {
+    color: red;
+}
+ul ol li.green {
+    color: green;
+}
+ul ol li.blue {
+    color: blue;
+}
+/*В классе p.italic задано свойство font-weight: italic. 
+Свойство font-weight управляет насыщенностью шрифта (жирностью), а не наклоном. 
+Курсив определяется свойством font-style: italic*/
+p.italic {
+    font-style: italic;
+}
+/*В классе p.bold указана команда font-style: bold;,  свойство font-style управляет наклоном. 
+Жирность устанавливается через font-weight: bold*/
+p.bold {
+    font-weight: bold;
+}
